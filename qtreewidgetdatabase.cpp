@@ -1,0 +1,18 @@
+#include "qtreewidgetdatabase.h"
+
+QTreeWidgetDatabase::QTreeWidgetDatabase()
+{
+    db1 = QSqlDatabase::addDatabase("QLINTER");
+    db = &db1;
+    db->setDatabaseName("OPU");
+    db->setUserName( "BIUS" );
+    db->setPassword( "BIUS_PSW" );
+    db->open();
+    get_information();
+
+}
+void QTreeWidgetDatabase::get_information(){
+
+
+
+}
